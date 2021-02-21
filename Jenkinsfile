@@ -13,6 +13,9 @@ pipeline{
         }
 
         stage("Run script"){
+            options{
+			    retry(3)
+			}
             steps{
                 echo "running the script"
                 sh "python bin/fail-on-3.py"
