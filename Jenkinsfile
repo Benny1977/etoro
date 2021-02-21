@@ -24,7 +24,9 @@ pipeline{
 
         stage("Print build id")
         {
-            echo $BUILD_NUMBER
+            steps{
+                echo $BUILD_NUMBER
+            }    
         }
     }
 }
