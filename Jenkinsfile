@@ -25,7 +25,7 @@ pipeline{
         stage("Print build id")
         {
             steps{
-                echo ${env.BUILD_NUMBER}
+                echo "${env.BUILD_NUMBER}"
             }    
         }
     }
