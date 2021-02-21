@@ -11,5 +11,12 @@ pipeline{
                 sh "tree"
             }
         }
+
+        stage("Run script"){
+            steps{
+                echo "running the script"
+                sh "python bin/fail-on-3.py"
+            }            
+        }
     }
 }
