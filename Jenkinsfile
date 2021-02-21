@@ -21,5 +21,10 @@ pipeline{
                 sh "python bin/fail-on-3.py"
             }            
         }
+
+        stage("Print build id")
+        {
+            echo $BUILD_NUMBER
+        }
     }
 }
