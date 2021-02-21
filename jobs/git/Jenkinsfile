@@ -8,7 +8,7 @@ pipeline{
                 credentialsId: 'jenkinsSrv',
                 url: 'git@github.com:Benny1977/etoro.git'
 
-                sh "ls -lat"
+                sh "tree"
             }
         }
     }
